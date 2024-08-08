@@ -1,0 +1,50 @@
+{% load static %}
+
+
+<html lang="en">
+<head>
+
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdotaArvore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+   
+
+</head>
+<body>
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="#" class="navbar-brand">
+                    <img id = "logo" src="static/logo.svg" alt="Agência AdotaArvore"> AdotaArvore
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle = "collapse"  data-target = "navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class = "navbar-nav">
+                        <a class="nav-item nav-link" id="home-menu">Home</a>
+                        <a class="nav-item nav-link" id="about-menu">Sobre</a>
+                        <a class="nav-item nav-link" id="serviços-menu">Serviços</a>
+                        <a class="nav-item nav-link" id="team-menu">Time</a>
+                        <a class="nav-item nav-link" id="Contact-menu">Contato</a>
+                        <a class="nav-item nav-link" id="login-menu">Entrar</a>
+
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <script src="{% static 'scripts.js' %}"></script>
+</body>
+</html>
